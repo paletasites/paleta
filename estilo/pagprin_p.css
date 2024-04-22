@@ -1,0 +1,366 @@
+@charset "ut-f8";
+
+
+
+body , html {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(243, 243, 243);
+}
+
+/* header */
+
+
+.img {
+    margin: 10px 0px 0px 0px;
+}
+
+.img > img{
+    width: 200px;
+    height: 80px;
+}
+
+/* main */
+
+#sites_ex {
+    background-color: transparent;
+    width: 80vw;
+    max-width: 330px;
+    height: 350px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.site {
+    background-color: #32bedd;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 2px 2px 5px #00000055;
+}
+
+#site_1 {
+    width: 120px;
+    height: 190px;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-image: url(../midia/img/formulariog.png);
+    background-size: cover;
+    background-position: center;
+    animation-name: subir_site1;
+    animation-duration: 0.8s;
+}
+
+#site_2 {
+    width: 200px;
+    height: 60px;
+    z-index: 3;
+    top: 10px;
+    right: -20px;
+    background-image: url(../midia/img/fundo_aple.png);
+    background-size: cover;
+    background-position: center ;
+    opacity: 0;
+    animation-name: deslisar_site2;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+#site_3 {
+    width: 60px;
+    height: 200px;
+    z-index: 3;
+    right: 5px;
+    bottom: 30px;
+    background-image: url(../midia/img/fundo_aple.png);
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0;
+    animation-name: subir_site3;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+#site_4 {
+    width: 90px;
+    height: 130px;
+    z-index: 3;
+    top: 30px;
+    background-image: url(../midia/img/formulariop.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation-name: decer_site4;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+#site_5 {
+    width: 160px;
+    height: 80px;
+    z-index: 2;
+    background-color: #e8ba12;
+    bottom: 40px;
+    background-image: url(../midia/img/relogio01.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation-name: deslisar_site5;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.texto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    margin-top: 40px;
+}
+
+.texto > p {
+    width: 70vw;
+    max-width: 500px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    opacity: 0.8;
+}
+
+button {
+    border: none;
+    background-image: linear-gradient(to bottom ,#FFB300 , #d39400);
+    width: 160px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.525);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    opacity: 0;
+    animation-name: aparecer_botao;
+    animation-duration: 1s; 
+    animation-fill-mode: forwards;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.232);
+}
+
+/* prova social */
+
+.prova_social {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.fundo {
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    right: 70px;
+    bottom: -40px;
+    left: 70px;
+}
+
+.pessoa {
+    width: 80vw;
+    max-width: 400px;
+    height: 200px;
+    background-color: rgb(252, 249, 239);
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.451) , -2px -2px 10px rgba(255, 255, 255, 0.234);
+}
+
+.foto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px 0px 0px 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    font-style: normal;
+}
+
+.nome {
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+}
+
+.desc {
+    width: 50%;
+    height: 50%;
+    margin: 10px 0px 0px 40px;
+    font-size: 1.1em;
+    overflow: hidden;
+}
+
+.site_pessoa {
+    width: 25%;
+    height: 60%;
+    background-color: rgb(49, 143, 225);
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
+    cursor: pointer;
+}
+
+.saber_mais {
+    opacity: 0.8;
+    margin-top: -25px;
+}
+
+.saber_mais > a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.saber_mais:hover {
+    opacity: 0.9;
+}
+
+.saber_mais > a:hover {
+    text-decoration: underline;
+} 
+
+#foto1 {
+    background-color: #11c6ee;
+}
+
+#site_pessoa1 {
+    background: url(../midia/img/formulariop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#foto2 {
+    background-color: rgb(241, 77, 48);
+}
+
+#site_pessoa2 {
+    background: url(../midia/img/fundo_aple.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#foto3 {
+    background-color: #ee9919;
+}
+
+#site_pessoa3 {
+    background: url(../midia/img/relogio_grande02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+/* outros sites */
+
+.vitrine {
+    width: 350px;
+    height: 300px;
+    margin: 50px 0px 0px 0px ;
+    position: relative;
+}
+
+.vits_site {
+    border-radius: 20px;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.277);
+}
+
+#vits_01 {
+    width: 100px;
+    height: 150px;
+    background-color: #ee9919;
+    background-image: url(../midia/img/fundo_aple.png);
+    background-size: cover;
+    background-position: center top;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translate(0% , -50%);
+}
+
+#vits_02 {
+    width: 150px;
+    height: 200px;
+    background-color: #ee4719;
+    background-image: url("../midia/img/formulariog.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 2;
+}
+
+#vits_03 {
+    width: 100px;
+    height: 150px;
+    background-color: #ee9919;
+    background-image: url(../midia/img/relogio01.png);
+    background-size: cover;
+    background-position: right;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translate(0% , -50%);
+}
+
+.vits_link {
+    position: absolute;
+    bottom: 20px;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vits_link:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+/* mini resumo */
+
+.texto_03 {
+    margin: 40px 0px 20px 0px;
+}
+
+.texto_03 > p{
+    width: 80vw;
+    max-width: 500px;
+    font-size: 1.5em;
+    text-align: center;
+}
