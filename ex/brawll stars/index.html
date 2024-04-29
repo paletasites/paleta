@@ -82,13 +82,24 @@
             width: 220px;
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px){
             .spaike_contem {
                 display: block;
             }
 
             .broque_contem {
                 width: 450px;
+            }
+        }
+
+        @media screen and (max-height: 870px) {
+
+            .broque_contem {
+                width: 300px;
+            }
+
+            .broque_contem > img {
+                width: 300px;
             }
         }
 
@@ -160,8 +171,14 @@
             <img src="img/broque.png" alt="broque">
         </div>
         <div class="contem">
-            <button>jogar</button>
+            <button onclick="mudar()">jogar</button>
         </div>
     </main>
+
+    <script>
+        function mudar () {
+            window.location.href = "https://play.google.com/store/search?q=brawl+stars&c=apps"
+        }
+    </script>
 </body>
 </html>
