@@ -108,7 +108,8 @@ h1 {
     background-color: var(--cor004);
     font-size: 1.3em;
     border-radius: 15px;
-    box-shadow: -1px 9px 10px rgba(0, 0, 0, 0.201);;
+    box-shadow: -1px 9px 10px rgba(0, 0, 0, 0.201);
+    color: black;
 }
 
 .folha {
@@ -135,6 +136,16 @@ h1 {
     margin: 50px 0px 0px 0px;
     position: relative;
     z-index: 2;
+}
+
+#titulo_pouco {
+    background-image: url("img/fundo_banana.jpeg");
+    color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .contem_titulo {
@@ -229,12 +240,25 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: -5px 11px 20px #00000036;
+    /* background-image: url("img/magra.jpeg"); */
 }
+
+/* #quadro002 {
+    background-image: url("img/sude.jpeg");
+}
+
+#quadro003 {
+    background-image: url("img/comer.jpeg");
+} */
 
 .mais_texto {
     margin: 80px 0px 0px 0px;
     position: relative;
     z-index: 2;
+}
+
+#titulo_color {
+    color: var(--cor001);
 }
 
 #texto_nsei {
@@ -287,4 +311,14 @@ footer {
 
 .email , .numero {
     margin: 0px 0px 10px 0px;
+}
+
+@media screen and (max-height: 858px) {
+    .conteudo_apresentacao {
+        width: 90%;
+    }
+
+    .contem_nutri {
+        left: 10px;
+    }
 }
