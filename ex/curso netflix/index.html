@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="conteudo">
+            <div class="contem_titulo">
+                <h1>curflix</h1>
+            </div>
+            <div class="contem_texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nulla praesentium? Iste est ab dolorum. Omnis quo fuga ex illum, itaque officiis id incidunt similique, at non eaque nulla corporis!</p>
+            </div>
+        </div>
+        <div class="contem_img"></div>
+        <div class="efeito"></div>
+        <div class="rolagem">
+            <div class="contem_curso" id="curso001"></div>
+            <div class="contem_curso" id="curso002"></div>
+            <div class="contem_curso" id="curso003"></div>
+            <div class="contem_curso" id="curso004"></div>
+            <div class="contem_curso" id="curso005"></div>
+            <!-- <div class="contem_curso" id="curso005"></div>
+            <div class="contem_curso" id="curso005"></div> -->
+        </div>
+    </main>
+
+    <script>
+        const curso001 = document.getElementById('curso001');
+        const curso002 = document.getElementById('curso002');
+        const curso003 = document.getElementById('curso003');
+        const curso004 = document.getElementById('curso004');
+        const contemImg = document.querySelector('.contem_img');
+
+        curso001.addEventListener('mouseenter', () => {
+            contemImg.style.backgroundImage = 'url("img/capa001.jpeg")';
+        });
+
+        curso001.addEventListener('mouseleave', () => {
+            contemImg.style.backgroundImage = '';
+        });
+
+        curso002.addEventListener('mouseenter', () => {
+            contemImg.style.backgroundImage = 'url("img/capa002.jpeg")';
+        });
+
+        curso002.addEventListener('mouseleave', () => {
+            contemImg.style.backgroundImage = '';
+        });
+
+        curso003.addEventListener('mouseenter', () => {
+            contemImg.style.backgroundImage = 'url("img/capa003.jpeg")';
+        });
+
+        curso003.addEventListener('mouseleave', () => {
+            contemImg.style.backgroundImage = '';
+        });
+
+        curso004.addEventListener('mouseenter', () => {
+            contemImg.style.backgroundImage = 'url("img/capa004.jpeg")';
+        });
+
+        curso004.addEventListener('mouseleave', () => {
+            contemImg.style.backgroundImage = '';
+        });
+    </script>
+</body>
+</html>

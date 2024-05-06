@@ -17,6 +17,9 @@
 
         html,body{
             background-color: rgb(240, 237, 237);
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
         }
 
         main{
@@ -27,7 +30,7 @@
 
         .cab {
             width: 100%;
-            height: 50px;
+            height: 80px;
             background-color: black;
             box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.273);
             display: flex;
@@ -42,7 +45,7 @@
         }
 
         #logo {
-            margin-top: 20px;
+            margin-top: -60px;
         }
 
         p {
@@ -50,25 +53,41 @@
             font-size: 1.3em;
             text-align: center;
             opacity: 0.8;
+            margin: 60px 0px 0px 0px;
         }
 
         button {
             width: 200px;
-            padding: 5px;
+            padding: 8px;
             margin-top: 20px;
-            border-radius: 10px;
-            background-color: rgb(255, 196, 0);
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.273);
+            background-color: rgb(245, 187, 0);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.273);
             position: relative;
             z-index: 1;
+            overflow: hidden;
+            transform: skewX(-3deg);
+            /* border: 2px solid black; */
+            border-bottom: 5px solid orange;
+            border-top: 5px solid rgb(239, 199, 69);
+            border-radius: 5px;
+        }
+
+        button > img {
+            width: 100px;
+            opacity: 0.9;
         }
 
         .broque_contem {
-            width: 380px;
+            width: 200px;
             position: absolute;
             bottom: 0px;
             right: 0px;
             overflow: hidden;
+            z-index: 2;
+        }
+
+        .broque_contem > img {
+            margin: 0px 0px -28px 30px;
         }
 
         .spaike_contem {
@@ -170,10 +189,12 @@
             <img src="img/cara_velho.png" alt="spaike">
         </div>
         <div class="broque_contem">
-            <img src="img/broque.png" alt="broque">
+            <img src="img/shele (1).png" alt="broque">
         </div>
         <div class="contem">
-            <button onclick="mudar()">jogar</button>
+            <button onclick="mudar()">
+                <img src="img/jogar02.png" alt="jogar">
+            </button>
         </div>
     </main>
 
