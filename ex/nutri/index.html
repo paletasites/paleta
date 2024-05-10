@@ -5,34 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sua nutri</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animacao.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
     <main>
         <section class="apresentacao">
-            <div class="folha" id="folha006">
-                <img src="img/folha06.png" alt="">
-            </div>
-            <div class="contem_nutri">
-                <div class="contem_img_nutri">
-                    <img src="img/mulher.png" alt="nutri">
+            <div class="contem_merda_toda">
+                <div class="contem_primeiro">
+                    <div class="folha" id="folha006">
+                        <img src="img/folha06.png" alt="">
+                    </div>
+                    <div class="contem_nutri">
+                        <div class="contem_img_nutri">
+                            <img src="img/mulher.png" alt="nutri">
+                        </div>
+                    </div>
+                    <div class="conteudo_apresentacao">
+                        <div class="contem_titulo_especial">
+                            <h1>adriana</h1>
+                            <h1>sua nutricionista</h1>
+                        </div>
+                        <div class="contem_p_especial">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, velit! Fugit, corrupti id nobis rationei.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="conteudo_apresentacao">
-                <div class="contem_titulo_especial">
-                    <h1>adriana</h1>
-                    <h1>sua nutricionista</h1>
-                </div>
-                <div class="contem_p_especial">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, velit! Fugit, corrupti id nobis rationei.</p>
-                </div>
-            </div>
-            <div class="contem_botao">
-                <button>falar comigo</button>
+            <div class="contem_botao"><button>falar comigo</button></div>
             </div>
             <div class="folha" id="folha004">
                 <img src="img/folha04.png" alt="">
             </div>
+            <div id="bode"></div>
         </section>
         <section class="falar_um_pouco">
             <div class="contem_titulo">
@@ -46,11 +51,11 @@
             <img src="img/abacaxi_cortado.png" alt="">
         </div>
         <section class="mais_um_pouco">
-            <div class="contem_tudo">
-                <div class="contem_titulo">
+            <div class="contem_tudo" id="tudo">
+                <div class="contem_titulo" id="titulo_tudo">
                     <h1>titulo</h1>
                 </div>
-                <div class="contem_p">
+                <div class="contem_p" id="p_tudo">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat, totam quod eos harum modi rerum, ipsa quae officia sed quis magni temporibus, aliquam facilis possimus voluptate doloribus impedit beatae.</p>
                 </div>
                 <div class="contem_botao" id="button002">
@@ -100,5 +105,16 @@
             </div>
         </div>
     </footer>
+
+    <script src="interacao.js"></script>
+    <script>
+        var tela = window.innerWidth;
+        const bode = window.document.getElementById("bode")
+        bode.innerHTML += `
+        <svg width="`+ tela +`" height="200px" class="onda">
+        <path fill="#CCBF9D" d="M 0 100 Q 100 150, 200 100 Q 300 50, 400 100 Q 500 150, 600 100 Q 700 50, 800 100 L 800 0 L 0 0 Z"></path>
+        </svg>
+        `
+    </script>
 </body>
 </html>
