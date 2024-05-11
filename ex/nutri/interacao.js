@@ -1,8 +1,12 @@
+
+// sessao do mais_um_pouco
+
 const posicao_tudo = 100 ;
-const contem_tudo = window.document.getElementById("tudo");
+const contem_tudo = window.document.getElementById("tudo")
 const titulo_tudo = window.document.getElementById("titulo_tudo");
 const p_tudo = window.document.getElementById("p_tudo");
-// con
+const button_tudo = window.document.getElementById("button002");
+const folha_tudo = window.document.getElementById("folha003")
 var tudo_afetado = false;
 
 

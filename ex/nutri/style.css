@@ -130,6 +130,43 @@ h1 {
     margin: -30px 0px 0px 0px;
 }
 
+svg {
+    position: absolute;
+}
+
+#svg02{
+    left: 399px;
+}
+
+#svg03 {
+    left: 798px;
+}
+
+#svg04 {
+    left: 1197px;
+}
+
+#svg05 {
+    left: 1596px;
+}
+
+#svg06 {
+    left: 1996px;
+}
+
+#svg07 {
+    left: 2394px;
+}
+
+.contem_onda {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    margin: -30px 0px 0px 0px;
+}
+
 .folha {
     position: absolute;
     width: 100px;
@@ -147,6 +184,7 @@ h1 {
 #folha004 {
     bottom: -120px;
     left: -20px;
+    z-index: 30;
 }
 
 .falar_um_pouco {
