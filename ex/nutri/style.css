@@ -397,7 +397,7 @@ footer {
     font-size: 1.2em;
 }
 
-@media screen and (max-height: 858px) {
+@media screen and (min-height: 858px) {
     .conteudo_apresentacao {
         width: 90%;
     }
