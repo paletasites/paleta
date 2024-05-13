@@ -321,16 +321,7 @@ svg {
     background-repeat: no-repeat;
     box-shadow: -5px 11px 20px #00000036;
     opacity: 0a;
-    /* background-image: url("img/magra.jpeg"); */
 }
-
-/* #quadro002 {
-    background-image: url("img/sude.jpeg");
-}
-
-#quadro003 {
-    background-image: url("img/comer.jpeg");
-} */
 
 .mais_texto {
     margin: 80px 0px 0px 0px;
@@ -403,5 +394,9 @@ footer {
 
     .contem_nutri {
         left: 10px;
+    }
+
+    .contem_onda {
+        margin-top: -40px;
     }
 }
