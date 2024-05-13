@@ -407,6 +407,7 @@ footer {
     }
 
     .contem_onda {
+        margin-top: -80px;
         z-index: -1;
     }
 }
