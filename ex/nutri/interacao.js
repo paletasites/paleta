@@ -1,5 +1,3 @@
-console.log("sinal de vida")
-
 // sessao do mais_um_pouco
 
 const contem_tudo = window.document.getElementById("tudo")
@@ -22,6 +20,11 @@ var ajuda_afetada = false;
 const prato = window.document.getElementById("prato")
 const p_prato = window.document.getElementById("texto_nsei")
 var prato_afetado = false;
+
+// sessao rodape
+
+// const rodape = window.getElementById("rodape")
+// const whatsapp = window.getElementById("zapzap")
 
 window.addEventListener('scroll', function() {
     var posicao_tudo = contem_tudo.getBoundingClientRect()
