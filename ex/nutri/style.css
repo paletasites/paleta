@@ -141,11 +141,12 @@ h1 {
 }
 
 .onda {
-    margin: -30px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 svg {
     position: absolute;
+    top: 0px;
 }
 
 #svg02{
