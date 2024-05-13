@@ -398,5 +398,6 @@ footer {
 
     .contem_onda {
         margin-top: -40px;
+        z-index: 1;
     }
 }
