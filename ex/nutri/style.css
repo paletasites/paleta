@@ -65,7 +65,7 @@ main {
     overflow: hidden;
     border-radius: 0px 60%;
     position: relative;
-    top: 50px;
+    top: 100px;
     left: 10%;
     box-shadow: -7px 6px 20px 0px #0000004a;
     animation: 1s aparecer_folha_maior;
@@ -178,7 +178,7 @@ svg {
     overflow: hidden;
     position: relative;
     display: flex;
-    margin: -30px 0px 0px 0px;
+    margin: -60px 0px 0px 0px;
     z-index: -1;
 }
 
@@ -397,6 +397,6 @@ footer {
     }
 
     .contem_onda {
-        margin-top: -60px;
+        z-index: -1;
     }
 }
