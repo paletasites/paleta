@@ -23,13 +23,13 @@ var prato_afetado = false;
 
 // sessao rodape
 
-// const rodape = window.getElementById("rodape")
-// const whatsapp = window.getElementById("zapzap")
+const zapzap = window.document.getElementById("zapzap")
 
 window.addEventListener('scroll', function() {
     var posicao_tudo = contem_tudo.getBoundingClientRect()
     var posicao_ajuda = titulo_ajuda.getBoundingClientRect()
     var posicao_prato = prato.getBoundingClientRect()
+    var posicao_zap = zapzap.get
 
     if (posicao_tudo.top < window.innerHeight - 200 && tudo_afetado == false) {
         contem_tudo.style.animation = "1s entrar_tudo"
@@ -50,6 +50,7 @@ window.addEventListener('scroll', function() {
         tudo_afetado = true;
     }if (posicao_tudo.top > window.innerHeight - 200 && tudo_afetado == true) {
         contem_tudo.style.animation = "none"
+        contem_tudo.style.opacity = 0
         titulo_tudo.style.animation = "none"
         p_tudo.style.animation = "none"
         button_tudo.style.animation = "none"

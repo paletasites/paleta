@@ -213,11 +213,11 @@ svg {
 }
 
 #titulo_pouco {
-    background-image: url("img/fundo_banana.jpeg");
+    background-image: url("img/fundo_amarelo.jpeg");
     color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right center;
     -webkit-background-clip: text;
     background-clip: text;
     width: 90vw;

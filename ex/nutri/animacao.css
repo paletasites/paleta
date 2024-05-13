@@ -138,3 +138,14 @@
         transform: translatex(0px) rotate(0deg);
     }
 }
+
+@keyframes entrar_zap {
+    from {
+        width: 0px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;;
+    }
+}
