@@ -68,6 +68,7 @@ main {
     top: 50px;
     left: 10%;
     box-shadow: -7px 6px 20px 0px #0000004a;
+    animation: 1s aparecer_folha_maior;
 }
 
 .contem_img_nutri {
@@ -76,6 +77,10 @@ main {
     margin: 20px 0px 0px 0px;
     position: absolute;
     bottom: 0px;
+    animation: 1s aparecer_nutri;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .contem_img_nutri > img {
@@ -102,9 +107,14 @@ h1 {
     font-family: "titulo02";
 }
 
+#titulo_principal {
+    animation: 1s entrar_lado_direito;
+}
+
 .contem_p_especial {
     width: 50%;
     margin: 15px 10px 0px 0px;
+    animation: 1s entrar_baixo;
 }
 
 .contem_botao {
@@ -124,6 +134,10 @@ h1 {
     color: black;
     position: relative;
     z-index: 20;
+}
+
+#button_tudo {
+    animation: 1s entrar_lado_esquerdo_btt;
 }
 
 .onda {
@@ -165,6 +179,7 @@ svg {
     position: relative;
     display: flex;
     margin: -30px 0px 0px 0px;
+    z-index: -1;
 }
 
 .folha {
@@ -179,12 +194,14 @@ svg {
 #folha006 {
     top: -60px;
     right: 0px;
+    animation: 1s entrar_cima;
 }
 
 #folha004 {
     bottom: -120px;
     left: -20px;
     z-index: 30;
+    animation: 1s folha_direita;
 }
 
 .falar_um_pouco {
@@ -202,6 +219,11 @@ svg {
     background-position: center;
     -webkit-background-clip: text;
     background-clip: text;
+    /* animation: 1s entrar_lado_direito; */
+}
+
+#p_pouco {
+    animation: 1s entrar_baixo;
 }
 
 .contem_titulo {
@@ -298,6 +320,7 @@ svg {
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: -5px 11px 20px #00000036;
+    opacity: 0a;
     /* background-image: url("img/magra.jpeg"); */
 }
 
@@ -322,6 +345,7 @@ svg {
 #texto_nsei {
     width: 70%;
     margin: 0px 0px 200px 0px;
+    opacity: 0;
 }
 
 .prato {
@@ -334,6 +358,7 @@ svg {
 
 .prato > img {
     width: 100%;
+    opacity: 0;
 }
 
 footer {

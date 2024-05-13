@@ -24,6 +24,20 @@
     }
 }
 
+@keyframes entrar_lado_esquerdo_btt {
+    from {
+        opacity: 0;
+        transform: translatex(-50px);
+        z-index: 20;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+        z-index: 20;
+    }
+}
+
 @keyframes entrar_lado_direito {
     from {
         opacity: 0;
@@ -48,16 +62,79 @@
     }
 }
 
-@keyframes folha_rodando {
+@keyframes entrar_baixo {
     from {
         opacity: 0;
-        transform: translate(-50px,-50px);
-        transform: rotate(300deg);
+        transform: translatey(50px);
     }
 
     to {
         opacity: 1;
-        transform: translate(0px);
-        transform: rotate(360deg);
+        transform: translatey(0px);
+    }
+}
+
+@keyframes folha_rodando {
+    from {
+        opacity: 0;
+        transform: translate(-50px,-50px) rotate(300deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px) rotate(360deg);
+    }
+}
+
+@keyframes folha_direita {
+    from {
+        opacity: 0;
+        transform: rotate(40deg) translateX(-50px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
+@keyframes aparecer_nutri {
+    from {
+        opacity: 0;
+        transform: translatey(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
+
+@keyframes aparecer_folha_maior {
+    from {
+        opacity: 0;
+        transform: translate(-50px,-50px);        
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes prato_rodando {
+    from {
+        opacity: 0;
+        transform: translatex(-30px) rotate(200deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatex(0px) rotate(0deg);
     }
 }
