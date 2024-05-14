@@ -24,12 +24,13 @@ var prato_afetado = false;
 // sessao rodape
 
 const zapzap = window.document.getElementById("zapzap")
+var zap_afetado = false;
 
 window.addEventListener('scroll', function() {
     var posicao_tudo = contem_tudo.getBoundingClientRect()
     var posicao_ajuda = titulo_ajuda.getBoundingClientRect()
     var posicao_prato = prato.getBoundingClientRect()
-    var posicao_zap = zapzap.get
+    var posicao_zap = zapzap.getBoundingClientRect()
 
     if (posicao_tudo.top < window.innerHeight - 200 && tudo_afetado == false) {
         contem_tudo.style.animation = "1s entrar_tudo"
@@ -98,4 +99,13 @@ window.addEventListener('scroll', function() {
         prato_afetado = false;
     }
 
+    if(posicao_zap.top < window.innerHeight && zap_afetado == false){
+        zapzap.style.animation = "1s entrar_zap"
+        zapzap.style.animationFillMode = "forwards"
+        zap_afetado = true
+    }if (posicao_zap.top > window.innerHeight && zap_afetado == true){
+        zapzap.style.animation = ""
+        zapzap.style.opacity = 0
+        zap_afetado = false
+    }
 });

@@ -382,7 +382,7 @@ footer {
 }
 
 .watzap > button{
-    width: 200px;
+    width: 0px;
     padding: 8px;
     font-size: 1.3em;
     border-radius: 20px;
@@ -390,6 +390,7 @@ footer {
     margin: 0px 0px 10px 0px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.209),
     inset 3px 3px 5px rgba(255, 255, 255, 0.274);
+
 }
 
 .email , .numero {

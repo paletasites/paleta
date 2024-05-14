@@ -141,11 +141,16 @@
 
 @keyframes entrar_zap {
     from {
-        width: 0px;
+        width: 0;
         opacity: 0;
     }
 
+    80% {
+        width: 200px;
+    }
+
     to {
-        opacity: 1;;
+        opacity: 1;
+        width: 200px;
     }
 }
