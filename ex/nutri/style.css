@@ -147,8 +147,6 @@ h1 {
 
 svg {
     position: absolute;
-    transform: translatey(-30px);
-    -webkit-transform: translatey(-30px);
 }
 
 #svg02{
@@ -181,8 +179,9 @@ svg {
     overflow: hidden;
     position: relative;
     display: flex;
-    margin: -70px 0px 0px 0px;
     z-index: -1;
+    transform: translatey(-100px);
+    -webkit-transform: translatey(-100px);
 }
 
 .folha {
