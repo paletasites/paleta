@@ -32,7 +32,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contem_botao" id="button_tudo"><button>fale comigo</button></div>
+            <div class="contem_botao" id="button_tudo"><button onclick="falar()">fale comigo</button></div>
             </div>
             <div class="folha" id="folha004">
                 <img src="img/folha04.png" alt="">
@@ -59,7 +59,7 @@
                     <p>Uma boa nutrição fortalece o sistema imunológico, reduz doenças crônicas, aumenta a energia, controla o peso e melhora o bem-estar mental. Invista em uma alimentação equilibrada para uma vida mais saudável e ativa.</p>
                 </div>
                 <div class="contem_botao" id="button002">
-                    <button>entrar em contato</button>
+                    <button onclick="falar()">entrar em contato</button>
                 </div>
                 <div class="folha" id="folha003">
                     <img src="img/folha03.png" alt="">
@@ -95,7 +95,7 @@
         </div>
         <div class="contato">
             <div class="watzap">
-                <button id="zapzap">WhatsApp</button>
+                <button id="zapzap" onclick="falar()">WhatsApp</button>
             </div>
             <div class="email">
                 <p>exemplo@gmail.com</p>
@@ -139,6 +139,11 @@
             </svg>
         </div>
         `
+
+        function falar () {
+            console.log("clicou")
+            window.location.href = "http://api.whatsapp.com/?phone=31981144800&text="
+        }
     </script>
 </body>
 </html>
