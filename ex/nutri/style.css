@@ -141,10 +141,6 @@ h1 {
     animation: 1s entrar_lado_esquerdo_btt;
 }
 
-.onda {
-    width: 1300px;
-}
-
 svg {
     position: absolute;
 }
@@ -180,8 +176,8 @@ svg {
     position: relative;
     display: flex;
     z-index: -1;
-    transform: translatey(-120px);
-    -webkit-transform: translatey(-120px);
+    transform: translatey(-50px);
+    -webkit-transform: translatey(-50px);
 }
 
 .folha {
