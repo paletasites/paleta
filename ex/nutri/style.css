@@ -147,7 +147,8 @@ h1 {
 
 svg {
     position: absolute;
-    top: -30px;
+    transform: translatey(-30px);
+    -webkit-transform: translatey(-30px);
 }
 
 #svg02{
