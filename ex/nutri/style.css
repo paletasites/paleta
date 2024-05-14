@@ -180,8 +180,8 @@ svg {
     position: relative;
     display: flex;
     z-index: -1;
-    transform: translatey(-150px);
-    -webkit-transform: translatey(-150px);
+    transform: translatey(-100px);
+    -webkit-transform: translatey(-100px);
 }
 
 .folha {
