@@ -145,6 +145,10 @@ svg {
     position: absolute;
 }
 
+#svg {
+    left: 0px;
+}
+
 #svg02{
     left: 399px;
 }
@@ -176,8 +180,8 @@ svg {
     position: relative;
     display: flex;
     z-index: -1;
-    transform: translatey(-50px);
-    -webkit-transform: translatey(-50px);
+    transform: translatey(-100px);
+    -webkit-transform: translatey(-100px);
 }
 
 .folha {
