@@ -99,11 +99,11 @@ window.addEventListener('scroll', function() {
         prato_afetado = false;
     }
 
-    if(posicao_zap.top < window.innerHeight && zap_afetado == false){
+    if(posicao_zap.top < window.innerHeight - 100 && zap_afetado == false){
         zapzap.style.animation = "1s entrar_zap"
         zapzap.style.animationFillMode = "forwards"
         zap_afetado = true
-    }if (posicao_zap.top > window.innerHeight && zap_afetado == true){
+    }if (posicao_zap.top > window.innerHeight - 100 && zap_afetado == true){
         zapzap.style.animation = ""
         zapzap.style.opacity = 0
         zap_afetado = false
