@@ -327,8 +327,18 @@ svg {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: -5px 11px 20px #00000036;
+    box-shadow: -5px 11px 20px #00000036,
+    inset -1px -1px 5px rgba(0, 0, 0, 0.209);
     opacity: 0a;
+    background-image: url("img/quadro03.jpeg");
+}
+
+#quadro002 {
+    background-image: url("img/quadro02.jpeg");
+}
+
+#quadro003 {
+    background-image: url("img/quadro01.jpeg");
 }
 
 .mais_texto {
