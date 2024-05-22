@@ -1,0 +1,197 @@
+@charset "ut-f8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "japa";
+    src: url(fontes/japa/go3v2.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte02);
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(242, 237, 237);
+    position: relative;
+    z-index: -2;
+}
+
+:root {
+    --cor001: #324001;
+    --cor002: #88A61C;
+    --cor003: #BF5B04;
+    --cor004: #D93D04;
+    --cor005: #7D0511;
+    --cor006: #AC7698;
+    --cor007: #EE9012;
+    --cor008: #D9BDA7;
+    --cor009: #0D0D0D;
+    --fonte01: "caveat";
+    --fonte02: "exo";
+}
+
+.caveat- {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+  
+.exo- {
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "japa";
+    font-size: 3em;
+}
+
+.centro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cab_vdd {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 20px 10px #00000003;
+    padding-bottom: 5px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.restaurante {
+    width: 70px;
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.fundo_cor {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    background-color: var(--cor007);
+    background-image: linear-gradient(to right, var(--cor007), var(--cor003));
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.contem_img_principal {
+    width: 300px;
+    height: 400px;
+    background-image: url("img/sushi11.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    z-index: 5;
+}
+
+.contem_titulos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    font-size: 1.5em;
+}
+
+.contem_todos {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.contem_titulo02 {
+    position: absolute;
+    bottom: 240px;
+    left: 50%;
+    transform: translate(-100%,0%);
+    z-index: 20;
+    font-size: 1.5em;
+}
+
+.fundo_titulo {
+    width: 130px;
+    background-image: linear-gradient(to right, var(--cor009), black);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    transform: skewY(-5deg)
+    translatex(20px);
+    transform-origin: top right;
+    box-shadow: 20px 20px 10px #0000003d;
+}
+
+.fundo_titulo > h1 {
+    color: #d30c20;
+    font-size: 2.5em;
+}
+
+.compra {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+}
+
+.contem_texto_p {
+    font-size: 1.1em;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contem_texto_p > p {
+    width: 90%;
+}
+
+.contem_button_compra {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contem_button_compra > button {
+    width: 230px;
+    padding: 5px;
+    font-size: 1.3em;
+    border: none;
+    background-image: linear-gradient(to right, var(--cor009), black);
+    box-shadow: -15px 13px 10px rgba(0, 0, 0, 0.238);
+}
+
+.contem_button_compra > button > p {
+    color: white;
+    font-family: "japa";
+    font-size: 1.5em;
+}

@@ -143,6 +143,7 @@ h1 {
 
 svg {
     position: absolute;
+    top: 0px;
 }
 
 #svg {
@@ -418,7 +419,6 @@ footer {
     }
 
     .contem_onda {
-        margin-top: -80px;
         z-index: -1;
     }
 }
